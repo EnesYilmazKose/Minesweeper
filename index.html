@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="assets/icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
     <title>Minesweeper</title>
 </head>
 <body>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <h1>Minesweeper</h1>
+        <table id="gameTable"></table>
+        <button  onclick="generateGameTable();">Play Again</button>
+        <div class="alerts f-lex justify-content-center align-items-center">
+            <div class="alert" id="winAlert">You Won!</div>
+            <div class="alert" id="loseAlert">You Lost!</div>
+        </div>
+    </div>  
     
+    <script src="index.js"></script>
 </body>
-<
+</html>
